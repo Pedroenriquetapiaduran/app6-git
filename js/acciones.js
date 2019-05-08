@@ -1,10 +1,10 @@
 // JavaScript Document
 
-$(document).ready(function(e){
-	document.addEventListener("deviceready",function(e){ 
+$(document).ready(function (e) {
+	document.addEventListener ("deviceready",function(e){ 
 		
 		$('#izquierda').on("swipeleft",function(e){
-		navigator.notification.alert("Deslizo a la izquierda", function(e){"Aplicacion ","Aceptar"});
+		navigator.notification.alert("Deslizo a la izquierda", function(e){"Aplicacion","Aceptar"});
 });
 		
 $('#derecha').on("swiperight",function(e){
