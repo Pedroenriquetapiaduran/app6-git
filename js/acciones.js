@@ -1,13 +1,13 @@
 // JavaScript Document
 
 $(document).ready(function(e){
-	document.addEventListener("deviceready",function(){ 
+	document.addEventListener("deviceready",function(e){ 
 		
-		$('#izquierda').on("swipeleft",function(){
-		navigator.notification.alert("Deslizo a la izquierda", function(){"Aplicacion ","Aceptar"});
+		$('#izquierda').on("swipeleft",function(e){
+		navigator.notification.alert("Deslizo a la izquierda", function(e){"Aplicacion ","Aceptar"});
 });
 		
-$('#derecha').on("swiperight",function(){
+$('#derecha').on("swiperight",function(e){
 		navigator.notification.confirm("¿Que quieres hacer?",function(opt){
 		switch(opt)
 		{
